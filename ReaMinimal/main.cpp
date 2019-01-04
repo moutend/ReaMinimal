@@ -15,6 +15,7 @@ class ReaTest : IReaperControlSurface {
 
 	virtual ~ReaTest() {
 		// do nothing
+		ClearConsole();
 	}
 
 	virtual const char* GetTypeString() override {
@@ -30,11 +31,11 @@ class ReaTest : IReaperControlSurface {
 	}
 
 	virtual void SetSurfaceSelected(MediaTrack* track, bool selected) override {
-		ShowConsoleMsg("SetSurfaceSelected");
+		ShowConsoleMsg("SetSurfaceSelected\n");
 	}
 
 	virtual void SetPlayState(bool play, bool pause, bool rec) override {
-		ShowConsoleMsg("SetPlayState");
+		ShowConsoleMsg("SetPlayState\n");
 	}
 };
 
