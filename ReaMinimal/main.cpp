@@ -34,7 +34,7 @@ class ReaTest : IReaperControlSurface {
 		return nullptr;
 	}
 
-/*@@@begin
+/*
 	virtual void OnTrackSelection(MediaTrack *trackid) override {
 		ShowConsoleMsg("Hello World!");
 	}
@@ -46,7 +46,7 @@ class ReaTest : IReaperControlSurface {
 	virtual void SetSurfaceSelected(MediaTrack* track, bool selected) override {
 		ShowConsoleMsg("Hello World!");
 	}
-@@@end*/
+*/
 };
 
 ReaTest* rt = nullptr;
