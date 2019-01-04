@@ -29,24 +29,10 @@ class ReaTest : IReaperControlSurface {
 		return "";
 	}
 
-	bool (*MIDI_SetCC)(MediaItem_Take* take, int ccidx, const bool* selectedInOptional, const bool* mutedInOptional, const double* ppqposInOptional, const int* chanmsgInOptional, const int* chanInOptional, const int* msg2InOptional, const int* msg3InOptional, const bool* noSortInOptional) {
+	bool *MIDI_SetCC(MediaItem_Take* take, int ccidx, const bool* selectedInOptional, const bool* mutedInOptional, const double* ppqposInOptional, const int* chanmsgInOptional, const int* chanInOptional, const int* msg2InOptional, const int* msg3InOptional, const bool* noSortInOptional) {
 		ShowConsoleMsg("MIDI_SetCC");
 		return nullptr;
 	}
-
-/*
-	virtual void OnTrackSelection(MediaTrack *trackid) override {
-		ShowConsoleMsg("Hello World!");
-	}
-
-	virtual void SetTrackListChange() override {
-		ShowConsoleMsg("Hello World!");
-	}
-
-	virtual void SetSurfaceSelected(MediaTrack* track, bool selected) override {
-		ShowConsoleMsg("Hello World!");
-	}
-*/
 };
 
 ReaTest* rt = nullptr;
