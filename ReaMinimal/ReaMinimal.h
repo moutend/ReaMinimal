@@ -3,6 +3,8 @@
 #include <windows.h>
 
 #define REAPERAPI_MINIMAL
+
+#define REAPERAPI_WANT_MIDI_SetCC
 #define REAPERAPI_WANT_CSurf_OnTrackSelection
 #define REAPERAPI_WANT_CountTracks
 #define REAPERAPI_WANT_CSurf_TrackToID
