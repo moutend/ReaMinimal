@@ -31,7 +31,7 @@ class ReaTest : IReaperControlSurface {
 
 	bool (*MIDI_SetCC)(MediaItem_Take* take, int ccidx, const bool* selectedInOptional, const bool* mutedInOptional, const double* ppqposInOptional, const int* chanmsgInOptional, const int* chanInOptional, const int* msg2InOptional, const int* msg3InOptional, const bool* noSortInOptional) {
 		ShowConsoleMsg("MIDI_SetCC");
-		return "" nullptr;
+		return nullptr;
 	}
 
 /*@@@begin
